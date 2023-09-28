@@ -12,7 +12,8 @@ const { getFirstAndLastTripTimestamp } = require('./trace-requests')
 const {
   canSaveNextTripsChunk,
   restartKonnector,
-  createChunks
+  createChunks,
+  getBaseURL
 } = require('./utils')
 const { saveAccountData } = require('./save')
 const { TRIPS_CHUNK_SIZE } = require('./const')
@@ -37,6 +38,7 @@ const run = async ({ fields, accountData, accountId }) => {
   const token = fields.password
 
   const providerId = fields.providerId
+  log('info', `Provider URL: ${getBaseURL(providerId)}`)
 
   /* Get the trips starting date */
   let startDate
