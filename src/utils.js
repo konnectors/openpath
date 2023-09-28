@@ -8,7 +8,7 @@ function canSaveNextTripsChunk(startExecTime, timeout) {
 
 async function restartKonnector(client, accountId) {
   const args = {
-    konnector: 'tracemob',
+    konnector: 'openpath',
     account: accountId
   }
 

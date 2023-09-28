@@ -25,10 +25,10 @@ const getTimeout = () => {
 const startExecTime = new Date()
 
 const run = async ({ fields, accountData, accountId }) => {
-  log('info', 'Start the Tracemob konnector')
+  log('info', 'Start the OpenPATH konnector')
 
   // We use the login field as an identifier that can be used as a device name.
-  const device = fields.login || 'Tracemob'
+  const device = fields.login || 'Cozy'
   // TODO: the token might be retrieved directly in the account
   const token = fields.password
 

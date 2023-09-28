@@ -1,10 +1,10 @@
 {
-  "name": "cozy-konnector-tracemob",
+  "name": "cozy-konnector-openpath",
   "version": "1.9.0",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git@github.com:konnectors/tracemob.git"
+    "url": "git@github.com:konnectors/openpath.git"
   },
   "keywords": [],
   "author": "Cozy Cloud",

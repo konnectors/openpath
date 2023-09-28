@@ -7,7 +7,7 @@ const run = require('./run')
 
 /**
  * This konnector retrieves the user trips from a
- * [trace server](https://github.com/fabmob/tracemob-server).
+ * [trace server](https://github.com/e-mission/e-mission-server).
  *
  * The konnector retrieves the trips starting from a date saved
  * in the account and save them in GEOJSON format, in the

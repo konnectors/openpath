@@ -1,4 +1,4 @@
-[Cozy][cozy] Tracemob
+[Cozy][cozy] OpenPATH
 =======================================
 
 What's Cozy?
@@ -11,10 +11,9 @@ What's Cozy?
 What is this konnector about ?
 ------------------------------
 
-This konnector retrieves your trips saved by the Tracemob app in a GeoJSON format. 
+This konnector retrieves your trips from an [e-mission-server](https://github.com/e-mission/e-mission-server), thanks to the traces retrieved from your Cozy app. 
 You can then visualize them directly on a map.
 
-See the [Tracemob](https://github.com/fabmob/tracemob-phone) repository for more technical insights.
 
 ### Open a Pull-Request
 
