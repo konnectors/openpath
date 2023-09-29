@@ -11,7 +11,7 @@
   "categories": [
     "transport"
   ],
-  "frequency": "daily",
+  "frequency": "hourly",
   "fields": {
     "login": {
       "type": "email"
