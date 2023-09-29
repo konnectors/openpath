@@ -1,0 +1,50 @@
+{
+  "name": "cozy-konnector-openpath",
+  "version": "1.9.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:konnectors/openpath.git"
+  },
+  "keywords": [],
+  "author": "Cozy Cloud",
+  "license": "AGPL-3.0",
+  "eslintConfig": {
+    "extends": [
+      "cozy-app"
+    ]
+  },
+  "eslintIgnore": [
+    "build",
+    "data"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "cozy-konnector-dev",
+    "standalone": "cozy-konnector-standalone",
+    "pretest": "npm run clean",
+    "test": "jest",
+    "clean": "rm -rf ./data",
+    "build": "webpack",
+    "lint": "eslint --fix .",
+    "deploy": "git-directory-deploy --directory build/ --branch ${DEPLOY_BRANCH:-build} --repo=${DEPLOY_REPOSITORY:-$npm_package_repository_url}",
+    "cozyPublish": "cozy-app-publish --token $REGISTRY_TOKEN --build-commit $(git rev-parse ${DEPLOY_BRANCH:-build}) --verbose",
+    "travisDeployKey": "./bin/generate_travis_deploy_key"
+  },
+  "dependencies": {
+    "cozy-client": "^40.3.0",
+    "cozy-flags": "^3.0.1",
+    "cozy-konnector-libs": "5.2.1",
+    "lodash": "4.17.21"
+  },
+  "devDependencies": {
+    "cozy-jobs-cli": "2.0.3",
+    "cozy-konnector-build": "1.5.1",
+    "jest": "27.5.1"
+  }
+}
