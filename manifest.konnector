@@ -7,7 +7,7 @@
   "slug": "openpath",
   "source": "git@github.com:konnectors/openpath.git",
   "editor": "Cozy",
-  "vendor_link": "https://cozy.io",
+  "vendor_link": "https://support.cozy.io",
   "categories": [
     "transport"
   ],
